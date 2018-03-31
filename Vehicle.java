@@ -159,7 +159,7 @@ public class Vehicle {
 	//----------------------- ACCELERATE
 	protected void Accelerate(int accelerateAmount) {
 		//Accelerate the speed by input
-		if ((this._speed + accelerateAmount) <= this._maximumSpeed){
+		if ((_speed + accelerateAmount) <= _maximumSpeed){
 			//if not over max limit
 			_speed =+ accelerateAmount;
 		} else {
