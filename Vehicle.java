@@ -67,7 +67,7 @@ public class Vehicle {
 	//ERROR(custom)
 	public class UnavailablePlateException extends Exception {
 
-		//Default serialVersionUID provided by Eclipse IDE
+		//Default serialVersionUID
 		private static final long serialVersionUID = 1L;
 
 		public UnavailablePlateException() {
@@ -75,7 +75,7 @@ public class Vehicle {
 	    }
 
 	    public UnavailablePlateException(String message) {
-	    	//exception that displays a message
+	    	//exception show message
 	        super(message);
 	    }
 	}
