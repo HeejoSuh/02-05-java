@@ -22,7 +22,6 @@ public class Main {
 		//Vehicle 1
 		System.out.println("Vehicle 1-----------");
 		//instantiate new vehicle
-		//Vehicle vehicle1 = new Vehicle(defaultPlate = "E1F2G3H", defaultColour= "Red");
 		Vehicle vehicle1 = new Vehicle("E1F2G3H","Red");
 		vehicle1.Accelerate(1);
 		System.out.println("Speed: "+vehicle1.getSpeed());
@@ -35,7 +34,8 @@ public class Main {
 		//Vehicle 2
 		System.out.println("\nVehicle 2-----------");
 		//instantiate new vehicle
-		Vehicle vehicle2 = new Vehicle();
+		//Vehicle vehicle2 = new Vehicle();
+		Vehicle vehicle2 = new Vehicle("POI0987", "Black");
 		System.out.println("License Plate: "+vehicle2.getLicensePlate());
 		//set license plate
 		vehicle2.setLicensePlate("3F4G5H6");
