@@ -28,7 +28,7 @@ public class Vehicle {
 	 * 
 	 * private-----------
 	 * The class/variable/method is accessible and available within 
-	 * this class only. Used for °∞background°± work inside of the class
+	 * this class only. Used for ‚Äúbackground‚Äù work inside of the class
 	 * 
 	 * protected--------
 	 * Any code inside of the class can see them, but no outside object can use them. 
@@ -83,10 +83,10 @@ public class Vehicle {
 	
 	//Java doesn't allow optional parameters with default values in constructors/methods
 	//so have to write twice.
-	public Vehicle() throws Exception {
+	//public Vehicle() throws Exception {
 		//Constructor for vehicle class
-		this("ABCD123", "White"); //can just use 'this' since know it's in correct format
-	}
+		//this("ABCD123", "White"); //can just use 'this' since know it's in correct format
+	//}
 	
 	public Vehicle(String plate, String colour) throws Exception {
 		//Constructor for vehicle class
@@ -119,6 +119,8 @@ public class Vehicle {
 	protected Double getSpeed() { 
 		//returns the speed
 		return _speed;
+		
+				
 	}
 	
 	//-------------//ALL
@@ -135,13 +137,13 @@ public class Vehicle {
 	protected void setLicensePlate(String newPlate) throws Exception { 
 		//sets the license plate number
 		
-		if(newPlate.length() == 7 && newPlate.matches(plateFormat)) {
+		//if(newPlate.length() == 7 && newPlate.matches(plateFormat)) {
 			//check if correct format was used
 			_licensePlateNumber = newPlate;
-		} else {
+		//} else {
 			//error
-			throw new UnavailablePlateException(); 
-		}
+			//throw new UnavailablePlateException(); 
+		//}
 	}
 	//-------------//COLOUR
 	protected void setColour(String newColour) { 
@@ -179,4 +181,3 @@ public class Vehicle {
 
 	//--------------------------------------------------------
 }//closing for class
-	
